@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+</head>
+<body>
+<div class="container">
+  <!--<h1>Io {{name|safe}}</h1>-->
+  <p> {{justname}} </p>
+
+{{ user_id }}
+<div>
+  <code>{{args}} </code>
+</div>
+<ul>
+  {% for item in products %}
+  <li>
+      {{  item }}
+  </li>
+  {% endfor  %}
+</ul>
+</div>
+
+</body>
+</html>
